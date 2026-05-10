@@ -105,18 +105,6 @@ title(axD,'(d)  Reconstructed:  Im(\Delta)','FontWeight','bold');
 draw_sea_plane(axD, planeScale*R_island, z0_im);
 draw_cylinders(axD, xC, yC, z0_im, zRec_im, zExact_im, r_cyl, nTheta);
 
-
-iters = (1:16)';
-err_rms_percent = [33.0 14.0 7.5 4.5 3.2 2.4 2.0 1.8 1.6 1.4 1.2 0.95 0.85 0.80 0.75 0.70]';
-
-fig2 = figure('Color','w','Position',[220 160 720 480]);
-plot(iters, err_rms_percent, 'x-','LineWidth',1.2);
-grid on;
-xlabel('Iteration number, n');
-ylabel('RMS Error (%)');
-xlim([1 16]); xticks(1:16);
-title('RMS Error Curve (dry ground)');
-
 end
 
 
